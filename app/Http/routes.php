@@ -18,3 +18,8 @@ Route::get('/', function () {
 Route::auth();
 
 Route::get('/home', 'HomeController@index');
+
+
+Route::resource('tipoInmuebles', 'TipoInmuebleController');
+
+Route::resource('tipoDocumentos', 'TipoDocumentoController');
